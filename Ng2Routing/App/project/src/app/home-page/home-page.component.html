@@ -1,0 +1,11 @@
+<p>
+  home-page works!
+</p>
+
+<button type="button" routerLink="/about">See About</button>
+
+<button type="button" (click)="callApi()">Call Web API</button>
+
+<div *ngIf="_data">
+  Response: {{_data | json}}
+</div>
